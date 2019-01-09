@@ -1,0 +1,226 @@
+/* Define custom fonts */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main elements of the page */
+
+*{  font-family: Dayrom ,'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+/* the header of the page */
+
+header{
+    height: 110px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+}
+header .logo{
+    float: left;
+}
+header .logo img{
+    height: 50px;
+}
+header .logo p{
+    font-family: Dayrom, serif;
+    font-size: 20px;
+}
+header nav{
+    float: right;
+    font-size: 20px;
+    margin-top: 20px;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+header nav ul li a{
+    line-height: 70px;
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li a:hover{
+    color: #760001;
+    border-bottom: 2px solid #760001;
+}
+
+/* the panner */
+
+.panner img{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+}
+.panner .expression{
+    background-color: rgba(24,24,24,0.8);
+    color: #fff;
+    position: absolute;
+    width: 1200px;
+    height: 76px;
+    padding-top: 18px;
+    top: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2em;
+}
+.panner .expression p{
+    display: inline;
+    padding-left: 15px;
+}
+.panner .expression button{
+    display: inline-block;
+    float: right;
+    color: #fff;
+    font-size: 0.9em;
+    background-color: #961111;
+    border: none;
+    margin-right: 15px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/*the section */
+section{
+    overflow: hidden;
+    margin-top: 20px;
+}
+section article{
+    width: 75%;
+    display: inline-block;
+    float: left;
+    height: 470px;
+}
+section aside{
+    width: 24%;
+    float: left;
+    padding: 25px;
+}
+section article h1{
+    margin: 15px 0;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+section aside{
+    height: 470px;
+    background-color: #817474;
+    margin-left: 10px;
+    color: #fff;
+    box-shadow: 0px 4px 8px #1c1a19;
+    border-radius: 10px;
+}
+section aside h1{
+    text-align: center;
+    font-size: 1.2em;
+}
+section aside img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+}
+section aside p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+section aside .icons{
+    text-align: center;
+}
+section aside .icons img{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 35px;
+}
+
+/* the footer */
+footer{
+    margin-top: 15px;
+    overflow: hidden;
+    height: 240px;
+    padding: 15px 0px;
+}
+footer .tweet{
+    margin-left: 25px;
+    width: 30%;
+    height: 200px;
+    float: left;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+footer .tweet h1,p,time{
+    margin: 10px;
+}
+footer .pictures{
+    margin-left: 20px;
+    width: 30%;
+    height: 200px;
+    float: left;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+footer .pictures img{
+    padding-left: 9px;
+    height: 90px;
+    width: 85px;
+}
+footer .pictures h1{
+    margin: 10px;
+}
+footer .friends{
+    margin-left: 20px;
+    width: 30%;
+    height: 200px;
+    float: left;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+footer .friends h1{
+    margin: 10px;
+}
+footer .friends ul li:before{
+    content: '> '
+}
+footer .friends ul li{
+    display: inline-block;
+    padding-left: 75px;
+}
